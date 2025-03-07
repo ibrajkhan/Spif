@@ -1,0 +1,28 @@
+.input__label {
+  color: rgb(97, 97, 97);
+}
+.contact__heading {
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.contact__info {
+  padding-bottom: 80px;
+}
+.form__section {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.contact__img img {
+  width: 100%;
+  height: 100%;
+}
+.row__contact {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 30px 30px;
+}

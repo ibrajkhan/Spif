@@ -1,0 +1,63 @@
+.col_back {
+  background-color: #123862;
+  color: white;
+}
+
+.serices__icon {
+  width: 30%;
+}
+.services__card {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #123862;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding-bottom: 20px;
+}
+.services__card > h4 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #495057;
+
+  padding-top: 20px;
+}
+.services__card > p {
+  padding: 10px;
+  color: #495057;
+  text-align: center;
+}
+.spif__vision__heading {
+  color: #495057;
+  font-weight: bold;
+}
+.spif__vision__italic {
+  color: #123862;
+  font-weight: bold;
+}
+
+.spif__vision__para {
+  color: #495057;
+  font-size: 16px;
+}
+.para {
+  font-size: 16px;
+}
+.content__images {
+  padding-top: 80px;
+}
+.inner__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 890px) {
+  .services__card {
+    margin-bottom: 30px;
+  }
+}

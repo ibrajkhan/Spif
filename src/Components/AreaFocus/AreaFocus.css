@@ -1,0 +1,64 @@
+.BackgroundImages {
+  /* background: rgba(149, 56, 56, 0.8) url("../../Images/ContactImg.jpg"); */
+  background: linear-gradient(rgba(48, 48, 48, 0.5), rgba(56, 56, 56, 0.5)),
+    url("../../Images/ContactImg.jpg");
+
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+
+  height: 400px; /* Adjust height as needed */
+  width: 100%;
+
+  text-align: center; /* Ensures text alignment */
+  color: white; /* Text color (change based on background) */
+  background-color: #2f506c;
+  font-weight: bold;
+}
+.BackgroundImages > h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.spip__area__heading {
+  color: #495057;
+  font-weight: bold;
+}
+
+.spif__area__para {
+  color: #495057;
+  font-size: 16px;
+}
+.area__focus__content {
+  padding-top: 80px;
+}
+.area__img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.area__focus__content__text {
+  padding: 0px 40px;
+}
+.area_focus_main {
+  padding-bottom: 80px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .BackgroundImages {
+    height: 200px; /* Reduce height for small screens */
+  }
+  .BackgroundImages h2 {
+    font-size: 18px; /* Smaller font size on mobile */
+  }
+  .area__focus__content__text {
+    padding: 40px 20px;
+  }
+  .area__img {
+    height: auto;
+  }
+}
