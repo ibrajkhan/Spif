@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Nav } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import MainImages from "../../Images/spifMain.jpeg";
 import "./Home.css";
@@ -11,6 +11,7 @@ import carePac3 from "../../Images/CarPac3.jpeg";
 import carePac4 from "../../Images/CarPac4.jpeg";
 import EnquiryForm from "../EnquiryForm/EnquiryForm";
 import Staff from "./Staff/Staff";
+import { HashLink } from "react-router-hash-link";
 
 // import MainImages from "../../Images/spifMain.jpeg";
 
@@ -29,7 +30,11 @@ const Home = () => {
 
           <Row className="g-0 align-items-stretch">
             <Col xs={12} md={6} className="d-flex">
-              <LazyLoadImage src={MainImages} className="img-fluid w-100" />
+              {/* <LazyLoadImage src={MainImages} className="img-fluid w-100" /> */}
+              <LazyLoadImage
+                src={MainImages}
+                className="img-fluid home__image"
+              />
             </Col>
             <Col
               xs={12}
@@ -44,7 +49,10 @@ const Home = () => {
                 also a fact that while the population of India is ageing, it
                 ranks at the 132nd position on the "Elder Population Happiness
                 Quotient"!
-                <Button className="mt-4">Read More</Button>
+                <Nav.Link href="/spif/">
+                  <Button className="mt-4">Read More</Button>
+                </Nav.Link>
+                {/* Spif Section */}
               </p>
             </Col>
           </Row>
@@ -60,7 +68,15 @@ const Home = () => {
                 Research is an imperative part of what we do. Without facts and
                 information, we can’t hope to bring about change.
               </p>
-              <Button>Read More</Button>
+
+              <HashLink
+                to="/areas-of-focus/#research"
+                style={{ color: "black" }}
+                id="navbar__items__text">
+                <Button>Read More</Button>
+              </HashLink>
+
+              {/* Area Of focus  Reasearch Section*/}
             </Col>
 
             <Col xs={12} md={6} lg={4} className="services__card pt-4">
@@ -73,7 +89,15 @@ const Home = () => {
                 Even though there is a large elderly population, we are not
                 aware of the problems they face collectively.
               </p>
-              <Button>Read More</Button>
+
+              <HashLink
+                to="/areas-of-focus/#cretingAwarness"
+                style={{ color: "black" }}
+                id="navbar__items__text">
+                <Button>Read More</Button>
+              </HashLink>
+
+              {/* Area Of focus Creating Awareness*/}
             </Col>
             <Col xs={12} md={6} lg={4} className="services__card pt-4">
               <LazyLoadImage
@@ -85,14 +109,25 @@ const Home = () => {
                 While the areas that need to be worked upon are vast, no single
                 entity can address them completely.
               </p>
-              <Button>Read More</Button>
+              {/* <Nav.Link href="/areas-of-focus/#initiative">
+                <Button>Read More</Button>
+              </Nav.Link> */}
+
+              <HashLink
+                to="/areas-of-focus/#initiative"
+                style={{ color: "black" }}
+                id="navbar__items__text">
+                <Button>Read More</Button>
+              </HashLink>
+
+              {/* Area Of focus  on ground Iniitative  section*/}
             </Col>
           </Row>
         </Container>
         <Container fluid>
           <Row className="g-0 align-items-stretch">
             <Col xs={12} md={6} className="d-flex">
-              <LazyLoadImage src={carePac} className="img-fluid w-100" />
+              <LazyLoadImage src={carePac} className="img-fluid w-100 " />
             </Col>
             <Col
               xs={12}

@@ -1,0 +1,13 @@
+.header__dontate {
+  background-color: rgb(18, 56, 98);
+  border: 1px solid rgb(18, 56, 98);
+  width: 160px;
+}
+.header__dontate:hover {
+  background-color: rgb(9, 38, 73);
+
+  border: 1px solid rgb(9, 38, 73);
+}
+.header__contribute {
+  width: 160px;
+}

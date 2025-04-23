@@ -1,7 +1,7 @@
-.BackgroundImagesContacts {
+.BackgroundImagesVolunteer {
   /* background: rgba(149, 56, 56, 0.8) url("../../Images/ContactImg.jpg"); */
   background: linear-gradient(rgba(48, 48, 48, 0.5), rgba(56, 56, 56, 0.5)),
-    url("../../Images/Contact-us (1).jpg");
+    url("../../Images/Volunteer.jpg");
 
   background-size: cover; /* Cover the entire div */
   background-position: center; /* Center the image */
@@ -18,48 +18,20 @@
   background-color: #2f506c;
   font-weight: bold;
 }
-.BackgroundImagesContacts > h2 {
+.BackgroundImagesVolunteer > h2 {
   font-size: 50px;
   font-weight: bold;
 }
-.EnquiryForm {
-  margin-top: 80px;
-}
-
-.Contact_main {
-  font-weight: bold;
-  font-size: 22px;
-  color: #495057;
-  text-align: center;
-  padding-top: 20px;
-  padding-top: 20px;
-}
-
-.Contact_details {
-  font-size: 16px;
-  color: #495057;
-  text-align: center;
-}
-.contact__icon {
-  width: 50px;
-  height: 50px;
-}
-.Contact__icon__section,
-.contact__section__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Contact__icon__section {
-  margin-bottom: 40px;
+.area__focus__content {
+  padding-top: 80px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .BackgroundImagesContacts {
+  .BackgroundImagesVolunteer {
     height: 200px; /* Reduce height for small screens */
   }
-  .BackgroundImagesContacts h2 {
+  .BackgroundImagesVolunteer h2 {
     font-size: 18px; /* Smaller font size on mobile */
   }
 }

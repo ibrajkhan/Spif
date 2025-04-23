@@ -1,4 +1,4 @@
-.BackgroundImages {
+.BackgroundImagesNewsEvents {
   /* background: rgba(149, 56, 56, 0.8) url("../../Images/ContactImg.jpg"); */
   background: linear-gradient(rgba(48, 48, 48, 0.5), rgba(56, 56, 56, 0.5)),
     url("../../Images/Meeting.jpg");
@@ -18,7 +18,7 @@
   background-color: #2f506c;
   font-weight: bold;
 }
-.BackgroundImages > h2 {
+.BackgroundImagesNewsEvents > h2 {
   font-size: 50px;
   font-weight: bold;
 }
@@ -30,10 +30,10 @@
 }
 
 @media (max-width: 768px) {
-  .BackgroundImages {
+  .BackgroundImagesNewsEvents {
     height: 200px; /* Reduce height for small screens */
   }
-  .BackgroundImages h2 {
+  .BackgroundImagesNewsEvents h2 {
     font-size: 18px; /* Smaller font size on mobile */
   }
 }

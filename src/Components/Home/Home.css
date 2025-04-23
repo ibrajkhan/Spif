@@ -56,6 +56,12 @@
   align-items: center;
 }
 
+.home__image {
+  /* height: 80vh; */
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 890px) {
   .services__card {
     margin-bottom: 30px;
